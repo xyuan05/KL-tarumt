@@ -1,0 +1,83 @@
+
+int staffID() {
+	char studentName[maxStdName];
+	char stdID[10];
+	char coursecode[10], coursecode2[10], coursecode3[10];
+	double credithour, credithour2, credithour3;
+	int numCourse;
+
+
+	int addcourescode;
+
+	
+	
+	printf("\nEnter Student Name                :");
+	scanf("%s", &studentName);
+	printf("\nEnter Student ID (Exp:KPKL12345)  :");
+	scanf("%s", &stdID);
+	printf("\nEnter the number of Course that student taken: ");
+
+
+	printf("Semester 1\n");
+	while (addcourescode == 1) {
+		printf("Enter the COURSE CODE      :");
+		scanf("%s", &coursecode);
+		printf("\n");
+	}
+	printf("Semester 2\n");
+	printf("Enter the COURSE CODE      :");
+	scanf("%s", &coursecode2);
+	printf("CREDIT HOUR                :");
+	scanf("%lf", &credithour2);
+	printf("\n");
+
+	printf("Semester 3\n");
+	printf("Enter the COURSE CODE      :");
+	scanf("%s", &coursecode3);
+	printf("CREDIT HOUR                :");
+	scanf("%lf", &credithour3);
+	printf("\n");
+
+	printf("==============================================\n");
+	printf("%s\n", &studentName);
+	printf("%s\n", &stdID);
+	printf("==============================================\n");
+
+	printf("Courde Code                     Credit Hours\n\n");
+	printf("Semester 1\n");
+	printf("%s                              %.lf           \n ", &coursecode, credithour);
+	printf("\n");
+	printf("Semester 2\n");
+	printf("%s                              %.lf           \n ", &coursecode2, credithour2);
+	printf("\n");
+	printf("Semester 3\n");
+	printf("%s                              %.lf           \n ", &coursecode3, credithour3);
+	printf("===================================================");
+
+	return staffID;
+ }
+
+
+int main() {
+
+	int staff;
+	int student;
+	printf("Menu : \n");
+	printf("1. Staff \n");
+	printf("2. Student\n");
+	printf("Enter your choice : ");
+
+	int choice;
+	scanf("%d", &choice);
+
+	if (choice == 1) {
+		printf("Enter your Staff ID        :  ");
+		scanf("%d", &staff);
+		
+
+
+		staffID();
+		printf("\n");
+
+		return 0;
+	}
